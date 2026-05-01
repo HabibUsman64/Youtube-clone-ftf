@@ -319,5 +319,8 @@ flex-shrink: 0;
         z-index: 1000;
         transform:translateX(-100%)
       }
+      .main-content{
+        margin-top: 55px;
+      }
 
 }
