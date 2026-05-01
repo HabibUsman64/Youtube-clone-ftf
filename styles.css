@@ -285,3 +285,39 @@ flex-shrink: 0;
 .main-content .video-card .video-menu-icon {
     margin-top: 5px;
 }
+
+@media (max-width:1280px){
+    nav .nav-center .input-container{
+        width: 400px;
+    }
+}
+
+@media (max-width:1024px){
+    nav .nav-center .input-container{
+        width:250px;
+    }
+}
+
+@media (max-width:768px) {
+    nav .nav-center {
+        display: none;
+    }
+    nav {
+        padding:0 1%;
+    }
+    nav .nav-left {
+        gap:5px;
+    }
+      nav .nav-right {
+        gap:5px;
+      }
+      .left-sidebar{
+        position:fixed;
+        top:0;
+        left:0;
+        background-color: #0f0f0f;
+        z-index: 1000;
+        transform:translateX(-100%)
+      }
+
+}
