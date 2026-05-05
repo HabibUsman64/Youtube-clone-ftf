@@ -59,6 +59,10 @@ nav .nav-left .icon-container:hover, nav .nav-right .icon-container:hover {
     cursor: pointer;
 }
 
+nav .nav-left .icon-container {
+    display: none;
+}
+
 nav .nav-left p{
   font-size: 1.3rem;
   font-weight: 500;  
@@ -251,7 +255,7 @@ gap: 7px;
 .main-content .video-grid .video-card .thumbnail {
     height: 230px;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 15px;
 } 
 
@@ -317,10 +321,34 @@ flex-shrink: 0;
         left:0;
         background-color: #0f0f0f;
         z-index: 1000;
-        transform:translateX(-100%)
+        transform:translateX(-100%);
+        transition: transform 0.6s ease;
       }
       .main-content{
-        margin-top: 55px;
+        margin-bottom: 50px;
+        padding: 0;
+        width: 100%;
       }
+
+      .sidebar-open{
+        transform:translateX(0);
+      }
+
+      .main-content .video-grid .video-card .video-info {
+        padding:0 10px;
+      }
+
+      .main-content .video-grid .video-card .thumbnail {
+        border-radius: 0;
+      }
+
+      .main-content .search-tags span{
+        font-size: 0.8rem;
+      }
+
+      nav .nav-left .icon-container {
+    display: grid;
+}
+    
 
 }
